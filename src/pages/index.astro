@@ -1,16 +1,24 @@
 ---
+import LoginDropdown from '../components/LoginDropdown.jsx';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<link rel="stylesheet" href="src/styles/index.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistema de Inscripciones</title>
+</head>
+<body>
+
+  <main class="contenedor">
+    <h1>Bienvenido</h1>
+    <p>Iniciar sesion</p>
+
+    <!-- client:load activa el JavaScript de React en el navegador -->
+    <LoginDropdown client:load />
+  </main>
+
+</body>
 </html>
